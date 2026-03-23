@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sirius'un Mesajı ✨</title>
+  </head>
+  <body
+    style="
+      background: #0b0e14;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    "
+  >
+    <div
+      style="
+        background: linear-gradient(145deg, #161b22, #0d1117);
+        padding: 40px;
+        border-radius: 25px;
+        border: 2px solid #79c0ff;
+        box-shadow: 0 0 50px rgba(121, 192, 255, 0.2);
+        text-align: center;
+        width: 320px;
+        color: #c9d1d9;
+      "
+    >
+      <h1
+        style="
+          margin-top: 0;
+          font-size: 24px;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          color: #79c0ff;
+          text-shadow: 0 0 10px rgba(121, 192, 255, 0.5);
+        "
+      >
+        Sirius'un Mesajı ✨
+      </h1>
+      <p
+        style="
+          color: #8b949e;
+          font-size: 14px;
+          font-style: italic;
+          margin-bottom: 25px;
+        "
+      >
+        Göklerin en parlak yıldızı senin için konuşuyor...
+      </p>
+
+      <div
+        id="cookie"
+        style="
+          font-size: 100px;
+          margin: 25px 0;
+          transition: transform 0.3s;
+          display: inline-block;
+        "
+      >
+        🥠
+      </div>
+
+      <button
+        id="breakBtn"
+        onclick="
+                const fallar = [
+                    'Sirius rehberliğinde, hayatının en parlak dönemine giriyorsun! ✨', 
+                    'Yıldızlar bugün senin için imkansızı mümkün kılıyor. 🌠', 
+                    'Kalbindeki o niyet, evrenin enerjisiyle mühürlendi! ✅', 
+                    'Beklediğin mucize, bir yıldız kayması kadar yakınında. 💫', 
+                    'Kendi ışığını fark et; Sirius bile senin yanında sönük kalır! 🌟',
+                    'Uzaklardan gelen bir fısıltı, sana büyük bir başarı müjdeliyor! 💌',
+                    'Cesur adımların, gökyüzündeki haritanı yeniden çiziyor. 🗺️'
+                ];
+                const rastgele = fallar[Math.floor(Math.random() * fallar.length)];
+                document.getElementById('cookie').innerText = '💎'; /* Kurabiye elmasa dönüşsün */
+                document.getElementById('fortune').innerText = rastgele;
+                document.getElementById('resultBox').style.display = 'block';
+                this.style.display = 'none';
+            "
+        style="
+          background: #1f6feb;
+          color: white;
+          border: none;
+          padding: 18px;
+          border-radius: 15px;
+          cursor: pointer;
+          font-weight: bold;
+          font-size: 16px;
+          width: 100%;
+          box-shadow: 0 4px 15px rgba(31, 111, 235, 0.4);
+          transition: 0.3s;
+        "
+      >
+        MESAJI AL 🌌
+      </button>
+
+      <div
+        id="resultBox"
+        style="
+          display: none;
+          margin-top: 25px;
+          padding: 20px;
+          background: rgba(121, 192, 255, 0.05);
+          border-radius: 15px;
+          border: 1px solid #30363d;
+          animation: glow 2s infinite alternate;
+        "
+      >
+        <p
+          id="fortune"
+          style="
+            font-size: 18px;
+            color: #adbac7;
+            font-style: italic;
+            font-weight: bold;
+            line-height: 1.5;
+          "
+        ></p>
+        <button
+          onclick="window.location.reload()"
+          style="
+            margin-top: 20px;
+            background: transparent;
+            border: 1px solid #444c56;
+            color: #8b949e;
+            cursor: pointer;
+            padding: 8px 15px;
+            border-radius: 8px;
+            font-size: 12px;
+          "
+        >
+          Yeni Bir Yıldız Seç ✨
+        </button>
+      </div>
+
+      <p
+        style="
+          font-size: 10px;
+          margin-top: 30px;
+          color: #484f58;
+          letter-spacing: 1px;
+        "
+      >
+        Yıldızlar seni izliyor
+      </p>
+    </div>
+
+    <style>
+      @keyframes glow {
+        from {
+          box-shadow: 0 0 5px rgba(121, 192, 255, 0.1);
+        }
+        to {
+          box-shadow: 0 0 20px rgba(121, 192, 255, 0.3);
+        }
+      }
+    </style>
+  </body>
+</html>
